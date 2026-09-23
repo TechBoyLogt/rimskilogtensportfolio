@@ -16,8 +16,8 @@
 - Languages: English (C2), Dutch (C2), German (B2), French (A2)
 
 ## Links
-- [Portfolio](https://techboylogt.github.io/)
-- [CV (PDF)](https://techboylogt.github.io/Files/Resume%20CV%20RL%20EN.pdf)
+- [Portfolio](https://techboylogt.github.io/rimskilogtensportfolio/)
+- [CV (PDF)](https://techboylogt.github.io/rimskilogtensportfolio/Files/Resume%20CV%20RL%20EN.pdf)
 - [LinkedIn](https://www.linkedin.com/in/rimskilogtens)
 - [GitHub](https://github.com/TechBoyLogt)
 - Email: rimskilogtens@gmail.com
