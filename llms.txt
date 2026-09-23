@@ -1,0 +1,23 @@
+# Rimski Logtens
+
+> Rimski Logtens is a BSc Artificial Intelligence student at Radboud University (Nijmegen, Netherlands, 2024–2027) and a Student Product Specialist at Mantel, working on SEO, GEO, CRO, CRM and pricing strategy.
+
+## Current roles
+- Student Product Specialist, Mantel (Sep 2025–present, part-time, hybrid, Arnhem-Nijmegen region): product page content, pricing strategy execution, SEO and GEO improvement, CRM improvement, KPI tracking.
+- Sport Commissaris, 35th board of N.S.W.V. Mercurius (Sep 2026–present): day-to-day operations, committee work, training coordination.
+
+## Previous experience
+- Allround Employee, Primetime (Jun 2024–Jan 2025): logistics, inventory control, order processing.
+- Student Actor, Kandinsky College (Aug 2021–Jul 2024): coached teachers in class management through simulated scenarios and constructive feedback.
+
+## Skills
+- Data science & AI: Python, scikit-learn, NLP, Plotly, R, data analysis
+- Product & marketing: SEO, GEO, CRO, CRM, pricing strategy, KPI analysis, e-commerce optimization
+- Languages: English (C2), Dutch (C2), German (B2), French (A2)
+
+## Links
+- [Portfolio](https://techboylogt.github.io/)
+- [CV (PDF)](https://techboylogt.github.io/Files/Resume%20CV%20RL%20EN.pdf)
+- [LinkedIn](https://www.linkedin.com/in/rimskilogtens)
+- [GitHub](https://github.com/TechBoyLogt)
+- Email: rimskilogtens@gmail.com
