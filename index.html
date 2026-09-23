@@ -29,8 +29,8 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<meta name="theme-color" content="#fcf7e9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#101114" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#011627" media="(prefers-color-scheme: dark)">
 
 <script type="application/ld+json">
 {
@@ -74,7 +74,7 @@
     ],
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Nijmegen",
+      "addressLocality": "Cuijk",
       "addressCountry": "NL"
     },
     "knowsAbout": [
@@ -146,25 +146,27 @@
     <div class="container hero-inner">
       <p class="eyebrow hero-eyebrow">Welcome, I'm</p>
       <h1 class="hero-name" id="heroName">Rimski Logtens</h1>
-      <p class="hero-subtitle">Rimski Logtens is a BSc Artificial Intelligence student at Radboud University in Nijmegen and a Student Product Specialist at Mantel, working on SEO, GEO, CRO and pricing strategy.</p>
+      <p class="hero-subtitle">Rimski Logtens is a BSc Artificial Intelligence student at Radboud University in Nijmegen and a Student Product Specialist at Mantel.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Get in touch</a>
         <a href="Files/Resume%20CV%20RL%20EN.pdf" class="btn btn-outline" download>Download CV</a>
       </div>
       <ul class="hero-meta">
-        <li><span aria-hidden="true">📍</span> Nijmegen, Netherlands</li>
+        <li><span aria-hidden="true">📍</span> Cuijk, Netherlands</li>
         <li><span aria-hidden="true">🎓</span> Radboud University · AI</li>
       </ul>
     </div>
-    <a href="#network" class="scroll-cue" aria-label="Scroll to the next section"><span></span></a>
+    <a href="#showcase" class="scroll-cue" aria-label="Scroll to the next section"><span></span></a>
   </section>
 
-  <section class="network-band" id="network" aria-label="Animated neural network">
-    <div class="network-sticky">
-      <canvas id="networkCanvas" aria-hidden="true"></canvas>
-      <div class="container network-caption">
-        <p class="eyebrow">Artificial Intelligence × Product</p>
-        <p class="network-line">Connecting data, models and the people who use them.</p>
+  <section class="showcase" id="showcase" aria-label="Exploded view of a road bike">
+    <div class="showcase-sticky">
+      <canvas id="showcaseCanvas" aria-hidden="true"></canvas>
+      <div class="bike-labels" id="bikeLabels" aria-hidden="true"></div>
+      <div class="container showcase-caption">
+        <p class="eyebrow">AI × Business</p>
+        <p class="showcase-line">A bike connects the rider to the road. I connect business to AI.</p>
+        <p class="showcase-sub">I translate what clients and teams need into something developers can build, and turn what gets built back into value people understand.</p>
       </div>
     </div>
   </section>
@@ -257,11 +259,11 @@
           </div>
         </li>
         <li class="timeline-item">
-          <div class="timeline-date">Sep 2025 — Present</div>
+          <div class="timeline-date">Sep 2025 — Sep 2026</div>
           <div class="timeline-content">
             <h3>Student Product Specialist</h3>
             <p class="timeline-org">Mantel · Part-time · Hybrid, Arnhem-Nijmegen Region</p>
-            <p>Responsible for product page content, executing pricing strategy, and promoting optimization of webpages.</p>
+            <p>Responsible for content management, executing pricing strategies, and promoting optimization of webpages.</p>
             <ul>
               <li>Improving SEO and GEO</li>
               <li>Improving CRM</li>
@@ -342,6 +344,6 @@
 </footer>
 
 <script src="assets/js/script.js"></script>
-<script type="module" src="assets/js/network.js"></script>
+<script type="module" src="assets/js/bike.js"></script>
 </body>
 </html>
