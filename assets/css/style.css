@@ -271,30 +271,8 @@ a { color: inherit; }
   animation-delay: calc(0.15s + var(--i) * 0.045s);
 }
 
-.intro-line {
-  display: block;
-  height: 2px;
-  margin: 14px auto 12px;
-  width: min(320px, 70vw);
-  background: linear-gradient(90deg, var(--accent), var(--accent-3), var(--accent-2));
-  transform: scaleX(0);
-  animation: intro-line 0.8s cubic-bezier(.65, 0, .35, 1) 0.8s forwards;
-}
-
-.intro-sub {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  opacity: 0;
-  animation: fade-in 0.6s ease 1.1s forwards;
-}
-
 @keyframes intro-letter { to { transform: none; } }
-@keyframes intro-line   { to { transform: scaleX(1); } }
-@keyframes fade-in      { to { opacity: 1; } }
-@keyframes intro-out    { to { transform: translateY(-100%); visibility: hidden; } }
+@keyframes intro-out   { to { transform: translateY(-100%); visibility: hidden; } }
 
 /* Hero */
 :root { --intro-delay: 0s; }
@@ -461,107 +439,6 @@ a { color: inherit; }
   100% { transform: translateY(0); opacity: 0; }
 }
 
-/* Showcase band: pinned while you scroll, the bike explodes into its parts */
-.showcase {
-  position: relative;
-  height: 70vh;
-}
-
-.js .showcase { height: 300vh; }
-
-.showcase-sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-}
-
-#showcaseCanvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.showcase-caption {
-  position: relative;
-  width: 100%;
-  padding-bottom: 10vh;
-  pointer-events: none;
-}
-
-.js .showcase-caption {
-  opacity: var(--caption, 0);
-  transform: translateY(calc((1 - var(--caption, 0)) * 24px));
-}
-
-.showcase-line {
-  font-family: 'Newsreader', Georgia, serif;
-  font-size: clamp(1.9rem, 4.6vw, 3.4rem);
-  line-height: 1.08;
-  letter-spacing: -0.015em;
-  max-width: 17ch;
-  margin: 0;
-}
-
-.showcase-sub {
-  color: var(--text-muted);
-  font-size: clamp(0.98rem, 1.5vw, 1.1rem);
-  max-width: 44ch;
-  margin: 16px 0 0;
-}
-
-/* Part labels, positioned by bike.js next to each exploded part */
-.bike-labels { position: absolute; inset: 0; pointer-events: none; }
-
-.bike-label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text);
-  white-space: nowrap;
-  opacity: 0;
-  will-change: transform, opacity;
-}
-
-.bike-label::before {
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
-  flex-shrink: 0;
-}
-
-.bike-label span {
-  background: color-mix(in srgb, var(--bg) 80%, transparent);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 3px 10px;
-  backdrop-filter: blur(4px);
-}
-
-@media (max-width: 720px) {
-  .bike-label { font-size: 0.66rem; gap: 6px; }
-  .bike-label span { padding: 2px 8px; }
-}
-
-.js .showcase.no-webgl { height: auto; }
-.no-webgl .showcase-sticky { position: relative; height: auto; padding-top: 64px; }
-.no-webgl .showcase-caption { --caption: 1; }
-
 /* Sections */
 .section { padding: 72px 0; }
 .section-alt { background: var(--bg-alt); }
@@ -640,9 +517,6 @@ a { color: inherit; }
   width: 168px;
   aspect-ratio: 1;
   border-radius: 50%;
-  padding: 4px;
-  background: conic-gradient(from var(--ring-angle, 0deg), var(--accent), var(--accent-3), var(--accent-2), var(--accent));
-  animation: ring-spin 8s linear infinite;
 }
 
 .profile-photo picture,
@@ -653,16 +527,6 @@ a { color: inherit; }
   border-radius: 50%;
   object-fit: cover;
 }
-
-.profile-photo img { border: 4px solid var(--card-bg); }
-
-@property --ring-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes ring-spin { to { --ring-angle: 360deg; } }
 
 .profile-name { font-size: 1.1rem; margin-bottom: 2px; }
 
@@ -861,8 +725,6 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   .js .reveal, .js .hero-inner > :not(.hero-name), .js .hero-name .l { opacity: 1; transform: none; }
   .js .intro { display: none; }
-  .js .showcase { height: 100vh; }
-  .js .showcase-caption { --caption: 1; }
   .js .timeline { --progress: 1; }
 }
 
